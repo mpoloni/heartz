@@ -1,0 +1,13 @@
+emonPi:
+  model: emonPi
+  manufacturer: Openenergymonitor
+  manufacturer_url: https://openenergymonitor.org/
+  description: 
+  sample_period: 10
+  max_sample_period: 30
+  measurements:
+  - {lower_limit: 0, physical_quantity: power, type: apparent, upper_limit: 7360}
+  wireless: false
+  
+
+

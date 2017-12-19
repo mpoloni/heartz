@@ -1,0 +1,131 @@
+Stopping system emonPiLCD daemon:.
+Starting emonPi Update >
+EUID: 1000
+
+Thu Feb 23 19:36:39 UTC 2017
+
+emonSD-17Jun2015_2updated
+
+git pull /home/pi/emonpi
+git pull /home/pi/RFM2Pi
+git pull /home/pi/emonhub
+
+Start emonPi Atmega328 firmware update:
+
+=================================
+EmonPi update started
+=================================
+
+EUID: 1000
+
+Requirement already up-to-date: paho-mqtt in /usr/local/lib/python2.7/dist-packages
+Cleaning up...
+Stopping OpenEnergyMonitor emonHub: emonhub has been stopped ok.
+Start ATmega328 serial upload using avrdude with latest.hex
+Discrete Sampling
+avrdude -c arduino -p ATMEGA328P -P /dev/ttyAMA0 -b 115200 -U flash:w:/home/pi/emonpi/firmware/compiled/latest.hex
+avrdude-original: Using autoreset DTR on GPIO Pin 7
+Starting OpenEnergyMonitor emonHub: emonhub has been started ok.
+
+
+Start emonhub update script:
+
+=================================
+EmonPi update started
+=================================
+Running emonhub automatic node addition script
+EUID: 1000
+EUID: 1000
+[[5]]
+Node 5 already present
+[[6]]
+Node 6 already present
+[[7]]
+Node 7 already present
+[[8]]
+Node 8 already present
+[[9]]
+Node 9 already present
+[[10]]
+Node 10 already present
+[[11]]
+Node 11 already present
+[[19]]
+Node 19 already present
+[[20]]
+Node 20 already present
+[[21]]
+Node 21 already present
+[[22]]
+Node 22 already present
+[[23]]
+Node 23 already present
+[[24]]
+Node 24 already present
+[[25]]
+Node 25 already present
+[[26]]
+Node 26 already present
+
+Start emoncms update:
+
+=================================
+Emoncms update started
+
+Thu Feb 23 19:37:02 UTC 2017
+
+EUID: 1000
+Checking cron tab for service runner entry...
+Add service runner cron entry
+
+git pull /var/www/emoncms
+* master
+
+git pull /var/www/emoncms/Modules/nodes
+* 9.0
+
+git pull /var/www/emoncms/Modules/app
+* 9.0
+
+git pull /var/www/emoncms/Modules/config
+* 9.0
+
+git pull /var/www/emoncms/Modules/wifi
+* 9.0
+git pull /var/www/emoncms/Modules/dashboard
+* master
+
+git pull /var/www/emoncms/Modules/graph
+* master
+
+git pull /home/pi/postprocess
+git pull /home/pi/backup
+* master
+
+
+Update Emoncms database
+[]
+
+Restarting Services...
+Restarting OpenEnergyMonitor emonHub: emonhub has been restarted ok.
+Log is turned off
+Restarting feedwriter
+Log is turned off
+Restarting emoncms-nodes
+
+Starting Daemon for the emoncms MQTT script: Restarting Daemon for the emoncms MQTT script: mqtt_input.
+
+set log rotate config owner to root
+Restarting Services...
+
+
+Starting emonPi LCD service..
+Starting system emonPiLCD daemon:.
+
+Filesystem is locked - Read Only access
+type ' rpi-rw ' to unlock
+Thu Feb 23 19:38:17 UTC 2017
+
+
+...................
+emonPi update done

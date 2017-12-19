@@ -1,0 +1,5 @@
+instance: 1 # this is the first building in the dataset
+elec_meters: # a dictionary where each key is a meter instance
+  1: {data_location: /building1/elec/meter1, device_model: emonPi, site_meter: true}
+original_name: house_1
+appliances:

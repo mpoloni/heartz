@@ -1,0 +1,11 @@
+name: REDD
+long_name: The Reference Energy Disaggregation Data set
+contact: ceo@mpoloni.com
+creators: ['Poloni, Matias']
+description: Several weeks of power data for home.
+geo_location: {country: UY, latitude:  -33.5339107, locality: Dolores, longitude:  -58.2177722}
+number_of_buildings: 1
+publication_date: 2017
+schema: https://github.com/nilmtk/nilm_metadata/tree/v0.2
+subject: Disaggregated power demand from domestic house.
+timezone: UY/Montevideo
